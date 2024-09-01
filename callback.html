@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+
+    <script>
+        let hafeez = (friend, hellofriend) => {
+            console.log(`hey ${friend}. how are you.`);
+            hellofriend();
+        }
+
+        let naqeeb = () => {
+            setTimeout(function(){
+                console.log(`i will call back u later.`);
+
+            },3000)
+
+        }
+
+        hafeez("Rauf", naqeeb);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //    Settimeout example
+
+
+        // let funA = () =>{
+        //     setTimeout(function(){
+        //         console.log("Welcome funA");
+
+        //     },3000)
+        // }
+
+        // let funB = () =>{
+        //     setTimeout(function(){
+        //         console.log("Welcome funB");
+
+        //     },1000)
+        // }
+ 
+        // funA();
+        // funB();
+
+    </script>
+    
+</body>
+</html>

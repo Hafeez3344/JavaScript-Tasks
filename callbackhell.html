@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+// function register(callback){
+//         setTimeout(() => {
+//           console.log( "register successfull");
+//           callback();
+//         }, 2000);
+//       }
+//       function SendEmail(callback){
+//           setTimeout(() => {
+//               console.log( "Welcome Email send");
+//               callback();
+//             }, 2000);
+//       }
+//       function Login(callback){
+//           setTimeout(() => {
+//               console.log( "Login  successfull");
+//               callback();
+//             }, 3000);
+//       }
+//       function getdata(callback){
+//           setTimeout(() => {
+//               console.log( "Got user data");
+//               callback();
+//             }, 1000);
+//       }
+//       function DisplayData(){
+//           setTimeout(() => {
+//               console.log( "Display user data");
+//             }, 1000);
+//       }
+//       function Other(){
+//               console.log( "Other application work");
+//       };
+//       register(function(){
+//           SendEmail(function(){
+//               Login(function(){
+//                   getdata(function(){
+//                       DisplayData();
+//                   });
+//               });
+//           });
+//       });
+//       Other();
+
+
+
+
+
+
+function register(callback){
+  setTimeout(() => {
+    console.log( "register successfull");
+    callback();
+  }, 2000);
+}
+function SendEmail(callback){
+    setTimeout(() => {
+        console.log( "Welcome Email send");
+        callback();
+      }, 2000);
+}
+function Login(callback){
+    setTimeout(() => {
+        console.log( "Login  successfull");
+        callback();
+      }, 3000);
+}
+function getdata(callback){
+    setTimeout(() => {
+        console.log( "Got user data");
+        callback();
+      }, 1000);
+}
+function DisplayData(){
+    setTimeout(() => {
+        console.log( "Display user data");
+      }, 1000);
+};
+
+register(function(){
+    SendEmail(function(){
+        Login(function(){
+            getdata(function(){
+                DisplayData();
+            });
+        });
+    });
+});
+
+    </script>
+
+
+   
+    
+    
+</body>
+</html>
